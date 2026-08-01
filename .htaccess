@@ -23,16 +23,9 @@ AddDefaultCharset UTF-8
   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
-# ---------------------------------------------------------------- adresse unique
-# bonnet.bzh et www.bonnet.bzh pointent tous deux sur le dossier www : la page
-# est donc accessible sous deux adresses, ce que les moteurs de recherche
-# considerent comme du contenu duplique. Le bloc ci-dessous renvoie www vers le
-# domaine nu. Retirer les # des trois lignes pour l'activer, une fois que
-# bonnet.bzh repond correctement.
-#<IfModule mod_rewrite.c>
-#  RewriteCond %{HTTP_HOST} ^www\.bonnet\.bzh$ [NC]
-#  RewriteRule ^(.*)$ https://bonnet.bzh/$1 [R=301,L]
-#</IfModule>
+# ---------------------------------------------------------------- note
+# Ce site est servi sous genea.bonnet.bzh uniquement : il n'y a pas de variante
+# « www » a rediriger. Rien a ajouter ici.
 
 # ---------------------------------------------------------------- compression
 <IfModule mod_deflate.c>
