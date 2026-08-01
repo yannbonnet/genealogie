@@ -1,0 +1,63 @@
+# Configuration Apache — hébergement mutualisé OVH
+# À déposer dans le même dossier que index.html.
+# Chaque bloc est protégé par <IfModule> : si un module manque, il est ignoré
+# au lieu de provoquer une erreur 500.
+
+# ---------------------------------------------------------------- page par défaut
+DirectoryIndex index.html index.htm
+
+# ---------------------------------------------------------------- encodage
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .css .js
+</IfModule>
+
+# ---------------------------------------------------------------- HTTPS
+# Force le passage en HTTPS. À n'activer qu'une fois le certificat SSL
+# délivré par OVH (onglet « Certificats SSL » du manager), sinon le site
+# devient inaccessible le temps de la délivrance.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------------------- adresse unique
+# bonnet.bzh et www.bonnet.bzh pointent tous deux sur le dossier www : la page
+# est donc accessible sous deux adresses, ce que les moteurs de recherche
+# considerent comme du contenu duplique. Le bloc ci-dessous renvoie www vers le
+# domaine nu. Retirer les # des trois lignes pour l'activer, une fois que
+# bonnet.bzh repond correctement.
+#<IfModule mod_rewrite.c>
+#  RewriteCond %{HTTP_HOST} ^www\.bonnet\.bzh$ [NC]
+#  RewriteRule ^(.*)$ https://bonnet.bzh/$1 [R=301,L]
+#</IfModule>
+
+# ---------------------------------------------------------------- compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------- cache navigateur
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+</IfModule>
+
+# ---------------------------------------------------------------- en-têtes
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always unset X-Powered-By
+</IfModule>
+
+# ---------------------------------------------------------------- divers
+ServerSignature Off
+Options -Indexes
