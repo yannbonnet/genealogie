@@ -23,6 +23,10 @@ AddDefaultCharset UTF-8
 # %{REQUEST_URI} contient toujours le chemin public : c'est lui qu'il faut utiliser.
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # Ne jamais rediriger le dossier de validation ACME : c'est par lui que
+  # Let's Encrypt vérifie le domaine avant d'émettre le certificat. Une
+  # redirection à cet endroit fait échouer la délivrance.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
