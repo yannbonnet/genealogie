@@ -145,6 +145,13 @@ svg .rt2{font-family:"Newsreader",Georgia,serif;font-size:12.5px;fill:#66707a}
 .vies{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:48px 0 0;
   background:var(--papier-3)}
 .vie{background:var(--papier);padding:32px 30px 36px}
+.ph.bande{margin:44px 0 0}
+.ph.bande img{height:380px;object-fit:cover;width:100%}
+.vie .ph{margin:0 0 20px}
+.vie .ph img{height:300px;object-fit:cover;width:100%}
+/* portrait en pied : on montre l'image entiere plutot que de la recadrer */
+.vie .ph.portrait img{object-fit:contain;background:var(--papier-2);padding:6px}
+.vie .ph figcaption{font-size:12.5px;margin-top:8px}
 .vie .rang{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--fer);
   letter-spacing:.16em;text-transform:uppercase}
 .vie h3{font-size:25px;margin:12px 0 0}
@@ -230,6 +237,7 @@ footer h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(
   .morts li{grid-template-columns:1fr;gap:2px}
   .chrono li{grid-template-columns:70px 1fr;gap:16px}
   .viz{overflow-x:auto}.viz svg{min-width:620px}
+  .ph.bande img{height:230px}
   svg.fan{min-width:0}
   body{font-size:17px}
 }
@@ -260,10 +268,432 @@ footer h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(
     </div>
   </div>
 </header>
+<div class="wide">
+<section>
+  <div class="num-sec">I · Le pays</div>
+  <h2>Un mouchoir de poche</h2>
+  <p class="chapo">Sur les 426 ancêtres, l'écrasante majorité naît dans une poignée de
+  paroisses du nord de la Loire-Inférieure, entre l'Erdre et la Loire. Mésanger et
+  Les Touches à elles seules en fournissent quatre-vingt-treize.</p>
+  <div class="viz"><svg viewBox="0 0 940 560" role="img" aria-label="Carte des communes d'origine">
+<circle cx="591.5" cy="238.9" r="248.7" class="ray"/>
+<text x="591.5" y="8.2" class="ray-t" text-anchor="middle">rayon de 25 km</text>
+<g transform="translate(36,526)">
+<line x1="0" y1="0" x2="99.5" y2="0" class="sc"/>
+<line x1="0" y1="-5" x2="0" y2="5" class="sc"/>
+<line x1="99.5" y1="-5" x2="99.5" y2="5" class="sc"/>
+<text x="49.7" y="-11" class="sc-t" text-anchor="middle">10 km</text>
+</g>
+<g transform="translate(900,44)"><path d="M0,-22 L0,10 M0,-22 L-5,-13 M0,-22 L5,-13" class="nord"/><text x="0" y="24" class="sc-t" text-anchor="middle">N</text></g>
+<circle cx="591.5" cy="238.9" r="24.5" class="pt"/>
+<text x="622.0" y="237.9" class="lb">Mésanger</text>
+<text x="622.0" y="250.9" class="lb2">56</text>
+<circle cx="451.3" cy="212.8" r="20.8" class="pt"/>
+<text x="478.2" y="211.8" class="lb">Les Touches</text>
+<text x="478.2" y="224.8" class="lb2">37</text>
+<circle cx="403.3" cy="373.1" r="18.0" class="pt"/>
+<text x="427.3" y="372.1" class="lb">Carquefou</text>
+<text x="427.3" y="385.1" class="lb2">25</text>
+<circle cx="502.6" cy="248.1" r="15.4" class="pt"/>
+<text x="524.0" y="247.1" class="lb">Ligné</text>
+<text x="524.0" y="260.1" class="lb2">16</text>
+<circle cx="547.3" cy="134.0" r="15.4" class="pt"/>
+<text x="568.7" y="133.0" class="lb">Riaillé</text>
+<text x="568.7" y="146.0" class="lb2">16</text>
+<circle cx="436.2" cy="259.2" r="14.0" class="pt"/>
+<text x="456.2" y="258.2" class="lb">Petit-Mars</text>
+<text x="456.2" y="271.2" class="lb2">12</text>
+<circle cx="708.8" cy="248.4" r="13.6" class="pt"/>
+<text x="728.5" y="247.4" class="lb">Saint-Herblon</text>
+<text x="728.5" y="260.4" class="lb2">11</text>
+<circle cx="586.3" cy="205.5" r="11.9" class="pt"/>
+<text x="604.2" y="204.5" class="lb">Teillé</text>
+<text x="604.2" y="217.5" class="lb2">7</text>
+<circle cx="610.0" cy="148.4" r="11.4" class="pt"/>
+<text x="627.4" y="147.4" class="lb">Bonnœuvre</text>
+<text x="627.4" y="160.4" class="lb2">6</text>
+<circle cx="560.6" cy="96.0" r="10.2" class="pt"/>
+<text x="576.8" y="95.0" class="lb">Grand-Auverné</text>
+<text x="576.8" y="108.0" class="lb2">4</text>
+<circle cx="653.2" cy="202.8" r="10.2" class="pt"/>
+<text x="669.4" y="201.8" class="lb">Pouillé-les-Côteaux</text>
+<text x="669.4" y="214.8" class="lb2">4</text>
+<circle cx="358.5" cy="460.6" r="4" class="pt-ref"/>
+<text x="367.5" y="464.6" class="lb-ref">Nantes</text>
+<circle cx="639.9" cy="296.8" r="4" class="pt-ref"/>
+<text x="648.9" y="300.8" class="lb-ref">Ancenis</text>
+<circle cx="231.2" cy="464.0" r="5" class="pt-aud"/>
+<text x="241.2" y="463.0" class="lb-aud">Couëron</text>
+<text x="241.2" y="476.0" class="lb2">enfance d'Audubon</text>
+</svg></div>
+  <p class="leg">Carte schématique. La taille des points est proportionnelle au nombre
+  d'ancêtres nés dans la commune. Nantes et Ancenis figurent comme repères ; Couëron,
+  en rouge, apparaîtra plus loin.</p>
+  <div class="grid2" style="margin-top:56px">
+    <div>
+      <p>Cette concentration n'a rien d'anecdotique. Elle raconte une société où l'on
+      épousait sa voisine, où la terre ne se quittait pas, et où les mêmes patronymes
+      reviennent de génération en génération. Les actes en portent la trace directe :
+      Pierre Ouary et Anne Ouarie, mariés vers 1730, étaient cousins. Toute la descendance
+      remonte donc deux fois au même ancêtre du XVI<sup>e</sup> siècle, par deux chemins
+      distincts.</p>
+      <p>Deux exceptions rompent ce cercle. Les Vavasseur, forgerons, viennent des confins
+      du Morbihan et des Côtes-d'Armor, à cent cinquante kilomètres de là. Et une branche
+      part pour l'Amérique — c'est l'objet de la quatrième partie.</p>
+      <h3 style="margin-top:44px">De quoi vivait-on</h3>
+      <ul class="barres" style="max-width:520px"><li><span class="b">Laboureur<i style="width:100.0%"></i></span><span class="v">22</span></li><li><span class="b">Cultivatrice<i style="width:36.4%"></i></span><span class="v">8</span></li><li><span class="b">Cultivateur<i style="width:18.2%"></i></span><span class="v">4</span></li><li><span class="b">Forgeron<i style="width:13.6%"></i></span><span class="v">3</span></li><li><span class="b">Boulanger<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Aubergiste<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Maçon<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Métayer<i style="width:4.5%"></i></span><span class="v">1</span></li><li><span class="b">Menuisier<i style="width:4.5%"></i></span><span class="v">1</span></li><li><span class="b">Ménagère<i style="width:4.5%"></i></span><span class="v">1</span></li></ul>
+      <p class="leg">Métiers relevés sur les seuls ancêtres directs. « Laboureur » ne
+      désigne pas un journalier : c'est le paysan qui possède son attelage et ses charrues,
+      le haut de la hiérarchie villageoise.</p>
+    </div>
+    <div>
+      <h3>Les communes d'origine</h3>
+      <ul class="barres"><li><span class="b">Mésanger<i style="width:100.0%"></i></span><span class="v">56</span></li><li><span class="b">Les Touches<i style="width:66.1%"></i></span><span class="v">37</span></li><li><span class="b">Carquefou<i style="width:44.6%"></i></span><span class="v">25</span></li><li><span class="b">Ligné<i style="width:28.6%"></i></span><span class="v">16</span></li><li><span class="b">Riaillé<i style="width:28.6%"></i></span><span class="v">16</span></li><li><span class="b">Petit-Mars<i style="width:21.4%"></i></span><span class="v">12</span></li><li><span class="b">Saint-Herblon<i style="width:19.6%"></i></span><span class="v">11</span></li><li><span class="b">Teillé<i style="width:12.5%"></i></span><span class="v">7</span></li><li><span class="b">Bonnœuvre<i style="width:10.7%"></i></span><span class="v">6</span></li><li><span class="b">Grand-Auverné<i style="width:7.1%"></i></span><span class="v">4</span></li><li><span class="b">Pouillé-les-Côteaux<i style="width:7.1%"></i></span><span class="v">4</span></li></ul>
+      <h3 style="margin-top:44px">Les patronymes qui reviennent</h3>
+      <div class="nuage"><span>OUARY <b>15</b></span><span>BONNET <b>9</b></span><span>MULOISE <b>9</b></span><span>DUTERTRE <b>9</b></span><span>JOURDON <b>8</b></span><span>GODARD <b>8</b></span><span>LEFEUVRE <b>8</b></span><span>LEDUC <b>7</b></span><span>SEBILLEAU <b>7</b></span><span>DAVODEAU <b>7</b></span><span>BLANCHET <b>6</b></span><span>LERAY <b>6</b></span><span>DELANOUE <b>6</b></span><span>RIGAUD <b>6</b></span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="num-sec">II · Trois vies</div>
+  <h2>Sortir de l'anonymat<br>des registres</h2>
+  <p class="chapo">Un ancêtre paysan ne laisse en général que trois lignes : un baptême, un
+  mariage, une sépulture. Trois hommes de cette lignée font exception, parce qu'un
+  événement les a jetés dans les archives — une guerre civile, une industrie, une
+  photographie.</p>
+
+  <div class="vies">
+    <article class="vie">
+      <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/L%E2%80%99Insurrection_des_chouans_%28Jean_Sorieul%29.jpg?width=1200" alt="L&#x27;Insurrection des chouans, par Jean Sorieul" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Une colonne de chouans en embuscade. Aucun portrait de Jacques Guérin n'existe : c'est le camp d'en face que la peinture du XIX<sup>e</sup> siècle a retenu. <span class="cr">Jean Sorieul, XIX<sup>e</sup> siècle, domaine public · <a href="https://commons.wikimedia.org/wiki/File:L%E2%80%99Insurrection_des_chouans_%28Jean_Sorieul%29.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+      <div class="rang">7<sup>e</sup> génération</div>
+      <h3>Jacques Guérin</h3>
+      <div class="dates">vers 1747 — 7 juin 1794</div>
+      <div class="role">boulanger, aubergiste, officier municipal</div>
+      <p>Il tenait à Riaillé une boulangerie et l'auberge de <em>L'Écu de France</em>, et
+      servait la commune sous la Révolution. Le 19 prairial an II, les chouans du Segréen
+      menés par Sarrazin font une incursion en Loire-Inférieure : ils massacrent une
+      trentaine de républicains à Riaillé et détruisent le haut fourneau. Jacques Guérin
+      est tué dans son arrière-boutique.</p>
+      <p>Son beau-frère Jacques Letort, maire de Saint-Mars-la-Jaille, avait été fusillé
+      six mois plus tôt. Dans ce pays-là, la Révolution ne fut pas une abstraction
+      parisienne : elle passa de ferme en ferme.</p>
+    </article>
+    <article class="vie">
+      <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bretagne%2C_Les_Forges_des_Salles-1671.jpg?width=1200" alt="Le village sidérurgique des Forges des Salles" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Les Forges des Salles, en forêt de Quénécan. Logis, rangées ouvrières, halles à charbon : le village n'a plus bougé depuis 1877. <span class="cr">Wikimedia Commons, CC BY-SA · <a href="https://commons.wikimedia.org/wiki/File:Bretagne%2C_Les_Forges_des_Salles-1671.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+      <div class="rang">9<sup>e</sup> génération</div>
+      <h3>François Vavasseur</h3>
+      <div class="dates">1699 — 1762</div>
+      <div class="role">forgeron aux Forges des Salles</div>
+      <p>Seule branche non paysanne de toute l'ascendance, et seule venue de Bretagne
+      intérieure. Il travaillait au fond de la forêt de Quénécan, au sud de l'actuel lac de
+      Guerlédan, dans un village sidérurgique complet : maison du maître de forges,
+      logements ouvriers, cantine, école, chapelle.</p>
+      <p>Le site a cessé toute activité en 1877 et n'a pratiquement pas bougé depuis. Classé
+      à l'inventaire des Monuments historiques en 1980, il se visite aujourd'hui — c'est
+      l'un des rares endroits où l'on peut encore voir, presque intact, le décor de travail
+      d'un ancêtre du XVIII<sup>e</sup> siècle.</p>
+    </article>
+    <article class="vie">
+      <figure class="ph portrait"><img src="louis-frederic-bonnet.jpg" alt="Louis Frédéric Bonnet en tenue de brancardier, 1914-1918" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Louis Frédéric Bonnet en tenue, brassard au bras, pendant la Grande Guerre. <span class="cr">Collection familiale</span></figcaption></figure>
+      <div class="rang">3<sup>e</sup> génération</div>
+      <h3>Louis Frédéric Bonnet</h3>
+      <div class="dates">1884 — 1957</div>
+      <div class="role">brancardier, valet de ferme, cultivateur</div>
+      <p>Brancardier pendant la Grande Guerre. Son frère Henri y est tué en 1915, à
+      vingt-neuf ans, dans l'attaque de Quennevières. Une photographie le montre en tenue,
+      brassard au bras.</p>
+      <p>Avant d'exploiter une très petite ferme à Carquefou, il fut employé — « valet »,
+      disait-on dans la famille — du marquis de Dion, probablement au château de Maubreuil.
+      Soit le même homme qui fonda les usines De Dion-Bouton, un temps premier constructeur
+      automobile du monde. L'écart entre les deux destins, dans le même champ de vision,
+      dit assez bien ce qu'était la société rurale de 1910.</p>
+    </article>
+  </div>
+
+  <p style="margin-top:52px">Des trois décors, un seul se visite encore. Le village des
+  Forges des Salles, où travaillait François Vavasseur, est resté en l'état :</p>
+  <div class="photos" style="margin-top:24px">
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bretagne%2C_Les_Forges_des_Salles-1691.jpg?width=1200" alt="Les Forges des Salles, bâtiments du village" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Le village n'a plus bougé depuis l'arrêt du haut fourneau, le 1<sup>er</sup> juillet 1877. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:Bretagne%2C_Les_Forges_des_Salles-1691.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bretagne%2C_Les_Forges_des_Salles-1673.jpg?width=1200" alt="Les Forges des Salles, bâtiments du village" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Fondé en 1623 par la famille de Rohan, le site a produit du fer pendant deux cent cinquante ans. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:Bretagne%2C_Les_Forges_des_Salles-1673.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bretagne%2C_Les_Forges_des_Salles-1676.jpg?width=1200" alt="Les Forges des Salles, bâtiments du village" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Logis du maître de forges, rangées ouvrières, cantine, école, chapelle, jardins en terrasses : inscrit aux Monuments historiques en 1980, l'ensemble se visite. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:Bretagne%2C_Les_Forges_des_Salles-1676.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+  </div>
+
+  <blockquote>
+    Nous René Chollet officier public préposé pour l'exécution de la loi du 20 septembre
+    1792 dans le territoire de la commune de Riaillé, département de la Loire-Inférieure,
+    district d'Ancenis, sur la déclaration qui nous a été faite par les veuves des
+    ci-dessous dénommés assassinés…
+    <cite>Registre d'état civil de Riaillé, 19 prairial an II</cite>
+  </blockquote>
+</section>
+
+<section>
+  <div class="num-sec">III · 1914-1918</div>
+  <h2>Cinq hommes</h2>
+  <p class="chapo">L'arbre recense cinq hommes en âge de combattre morts entre 1914 et 1916.
+  Aucun n'est un ancêtre direct : ce sont des frères, des beaux-frères, des cousins. C'est
+  exactement à cela que ressemble une famille après la guerre — les lignées continuent par
+  ceux qui sont revenus.</p>
+  <ul class="morts"><li><span class="n">Jean Antoine Penaud</span><span class="a">32 ans · 1914</span><span class="l">Verneuil-Courtonne, Aisne</span></li><li><span class="n">Henri Auguste Bonnet</span><span class="a">29 ans · 1915</span><span class="l">Quennevières, Oise</span></li><li><span class="n">Augustin Pierre Chaintrier</span><span class="a">26 ans · 1915</span><span class="l">Souain-Perthes-lès-Hurlus, Marne</span></li><li><span class="n">Jean Marie Joseph Jumois</span><span class="a">33 ans · 1916</span><span class="l">Tahure, Marne</span></li><li><span class="n">Augustin Rechignard</span><span class="a">39 ans · 1916</span><span class="l">Froidos, Meuse</span></li></ul>
+  <p style="margin-top:26px">Quennevières, Souain, Tahure : trois noms qui ne disent plus
+  rien et qui furent, en 1915, des offensives entières.</p>
+</section>
+</div>
+
+<div class="aud">
+<div class="wide">
+<section style="border-top:0">
+  <div class="num-sec">IV · Le cousin d'Amérique</div>
+  <h2>John James Audubon</h2>
+  <p class="chapo">Le plus célèbre peintre d'oiseaux du monde est né Jean Rabin, le
+  26 avril 1785 aux Cayes, à Saint-Domingue. Sa mère, Jeanne Rabine, était née vingt-sept
+  ans plus tôt au hameau des Mazures, commune des Touches — dans la paroisse même où les
+  Ouary labouraient depuis deux siècles. Les deux lignées partent du même homme.</p>
+
+  <div class="photos" style="margin-top:44px">
+    <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Audubon%2C_bird_naturalist_LCCN2002700147.jpg?width=1200" alt="Portrait de John James Audubon" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>John James Audubon. Le naturaliste posa en trappeur pour servir sa légende américaine. <span class="cr">Library of Congress, domaine public · <a href="https://commons.wikimedia.org/wiki/File:John_James_Audubon%2C_bird_naturalist_LCCN2002700147.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/AudubonJJ.jpg?width=1200" alt="John James Audubon" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Né Jean Rabin aux Cayes, mort John James Audubon à Manhattan : trois noms pour une seule vie. <span class="cr">Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:AudubonJJ.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Audubon%2C_1785-1851%2C_head-and-shoulders_portrait%2C_facing_right_in_oval_memorial_portrait_fringed_by_bird_vignettes_LCCN2005689323.jpg?width=1200" alt="Portrait commémoratif d&#x27;Audubon entouré de vignettes d&#x27;oiseaux" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Portrait commémoratif, entouré de vignettes tirées de ses planches. <span class="cr">Library of Congress, domaine public · <a href="https://commons.wikimedia.org/wiki/File:John_James_Audubon%2C_1785-1851%2C_head-and-shoulders_portrait%2C_facing_right_in_oval_memorial_portrait_fringed_by_bird_vignettes_LCCN2005689323.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+  </div>
+
+  <h3 style="margin-top:78px;font-size:26px">Les deux branches</h3>
+  <p style="margin-top:14px">Guillaume Ouary, laboureur aux Touches, meurt en 1652. Deux de
+  ses enfants ouvrent deux histoires sans rapport : son fils Pierre reste au village, sa
+  fille Renée est à l'origine de la lignée qui mènera à Audubon. Onze générations d'un côté,
+  sept de l'autre.</p>
+  <div class="viz"><svg viewBox="0 0 940 832" role="img" aria-label="Les deux branches issues de Guillaume Ouary">
+<rect x="320" y="26" width="300" height="56" rx="3" class="bx-src"/>
+<text x="470" y="50" class="bt-src" text-anchor="middle">Guillaume Ouary</text>
+<text x="470" y="70" class="bt-src2" text-anchor="middle">vers 1566 – 1652 · Les Touches</text>
+<path d="M470,82 L470,90 L244,90" class="bl"/>
+<path d="M470,82 L470,90 L696,90" class="bl"/>
+<line x1="244" y1="90" x2="244" y2="742" class="bl"/>
+<circle cx="244" cy="116" r="5" class="bn g"/>
+<text x="226" y="115" class="bt " text-anchor="end">Pierre Ouary</text>
+<text x="226" y="130" class="bt2" text-anchor="end">1630–1697</text>
+<circle cx="244" cy="178" r="5" class="bn g"/>
+<text x="226" y="177" class="bt " text-anchor="end">Julien Ouary</text>
+<text x="226" y="192" class="bt2" text-anchor="end">1664–1723</text>
+<circle cx="244" cy="240" r="5" class="bn g"/>
+<text x="226" y="239" class="bt " text-anchor="end">Pierre Ouary</text>
+<text x="226" y="254" class="bt2" text-anchor="end">1701–1774</text>
+<circle cx="244" cy="302" r="5" class="bn g"/>
+<text x="226" y="301" class="bt " text-anchor="end">Julien Ouary</text>
+<text x="226" y="316" class="bt2" text-anchor="end">1738–1785</text>
+<circle cx="244" cy="364" r="5" class="bn g"/>
+<text x="226" y="363" class="bt " text-anchor="end">François Ouary</text>
+<text x="226" y="378" class="bt2" text-anchor="end">1774–1847</text>
+<circle cx="244" cy="426" r="5" class="bn g"/>
+<text x="226" y="425" class="bt " text-anchor="end">Léon Julien Ouary</text>
+<text x="226" y="440" class="bt2" text-anchor="end">1824–1903</text>
+<circle cx="244" cy="488" r="5" class="bn g"/>
+<text x="226" y="487" class="bt " text-anchor="end">Marie Rosalie Ouary</text>
+<text x="226" y="502" class="bt2" text-anchor="end">1855–1939</text>
+<circle cx="244" cy="550" r="5" class="bn g"/>
+<text x="226" y="549" class="bt " text-anchor="end">Marguerite Juvin</text>
+<text x="226" y="564" class="bt2" text-anchor="end">1892–1958</text>
+<circle cx="244" cy="612" r="5" class="bn g"/>
+<text x="226" y="611" class="bt " text-anchor="end">Joseph Muloise</text>
+<text x="226" y="626" class="bt2" text-anchor="end">1927–2020</text>
+<circle cx="244" cy="674" r="5" class="bn g"/>
+<text x="226" y="673" class="bt " text-anchor="end">…</text>
+<text x="226" y="688" class="bt2" text-anchor="end">génération suivante</text>
+<circle cx="244" cy="736" r="8" class="bn g fin"/>
+<text x="226" y="735" class="bt fin" text-anchor="end">Yann Bonnet</text>
+<text x="226" y="750" class="bt2" text-anchor="end">1981</text>
+<line x1="696" y1="90" x2="696" y2="494" class="bl"/>
+<circle cx="696" cy="116" r="5" class="bn d"/>
+<text x="714" y="115" class="bt " text-anchor="start">Renée Ouary</text>
+<text x="714" y="130" class="bt2" text-anchor="start">1625–1711</text>
+<circle cx="696" cy="178" r="5" class="bn d"/>
+<text x="714" y="177" class="bt " text-anchor="start">Luc Callo</text>
+<text x="714" y="192" class="bt2" text-anchor="start">1658–1688</text>
+<circle cx="696" cy="240" r="5" class="bn d"/>
+<text x="714" y="239" class="bt " text-anchor="start">Marie Callo</text>
+<text x="714" y="254" class="bt2" text-anchor="start">1683–1715</text>
+<circle cx="696" cy="302" r="5" class="bn d"/>
+<text x="714" y="301" class="bt " text-anchor="start">Marie Letexier</text>
+<text x="714" y="316" class="bt2" text-anchor="start">1712–1788</text>
+<circle cx="696" cy="364" r="5" class="bn d"/>
+<text x="714" y="363" class="bt " text-anchor="start">Guillaume Rabine</text>
+<text x="714" y="378" class="bt2" text-anchor="start">1734–1802</text>
+<circle cx="696" cy="426" r="5" class="bn d"/>
+<text x="714" y="425" class="bt " text-anchor="start">Jeanne Rabine</text>
+<text x="714" y="440" class="bt2" text-anchor="start">1758–1785</text>
+<circle cx="696" cy="488" r="8" class="bn d fin"/>
+<text x="714" y="487" class="bt fin" text-anchor="start">John James Audubon</text>
+<text x="714" y="502" class="bt2" text-anchor="start">1785–1851</text>
+</svg></div>
+  <p class="leg">Cousinage au sixième degré, avec quatre générations d'écart.</p>
+
+  <h3 style="margin-top:78px;font-size:26px">Jeanne Rabine, fille de chambre</h3>
+  <div class="grid2" style="margin-top:22px">
+    <div>
+      <p>Baptisée aux Touches, à l'église Sainte-Mélaine, le 14 mars 1758. Le tanneur Cébron,
+      voisin du hameau des Mazures, la recommande à Jacques Pallon de la Bouverie, juge en
+      retraite devenu planteur. Le 23 octobre 1781, elle embarque quai de la Fosse à Nantes
+      sur <em>Le Conquérant</em>, avec la famille Pallon, pour Saint-Domingue. Elle a
+      vingt-trois ans et ne reverra jamais la Bretagne.</p>
+      <p>Aux Cayes, elle rencontre Jean Audubon, capitaine nantais, planteur et négrier,
+      marié en France. Elle meurt quelques mois après la naissance de son fils, emportée par
+      une fièvre tropicale. L'enfant est confié à Catherine Bouffard, compagne de son père,
+      puis ramené en France en 1788.</p>
+      <p>Il grandit à La Gerbetière, à Couëron, chez l'épouse légitime de son père. En 1794,
+      le couple l'adopte sous le prénom de <em>Fougère</em> — le nom du jour de sa naissance
+      au calendrier républicain. En 1803, muni d'un faux passeport destiné à lui éviter la
+      conscription, il embarque pour les États-Unis sous le nom de John James Audubon.</p>
+    </div>
+    <div><figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG?width=1200" alt="Église Sainte-Mélaine des Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>L'église Sainte-Mélaine des Touches, paroisse de baptême de Jeanne Rabine en 1758. <span class="cr">Llann Wé², CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure></div>
+  </div>
+  <div class="viz" style="margin-top:44px"><svg viewBox="0 0 940 176" role="img" aria-label="Itinéraire de Jeanne Rabine et de son fils">
+<line x1="70" y1="66" x2="870" y2="66" class="rt"/>
+<circle cx="70" cy="66" r="9" class="rn cle"/>
+<text x="70" y="40" class="rl" text-anchor="middle">Les Touches</text>
+<text x="70" y="56" class="rd" text-anchor="middle">1758</text>
+<text x="70" y="92" class="rt2" text-anchor="middle">Naissance au hameau des</text>
+<text x="70" y="106" class="rt2" text-anchor="middle">Mazures</text>
+<circle cx="270" cy="66" r="6" class="rn"/>
+<text x="270" y="40" class="rl" text-anchor="middle">Nantes</text>
+<text x="270" y="56" class="rd" text-anchor="middle">23 oct. 1781</text>
+<text x="270" y="92" class="rt2" text-anchor="middle">Embarquement quai de la</text>
+<text x="270" y="106" class="rt2" text-anchor="middle">Fosse sur Le Conquérant</text>
+<circle cx="470" cy="66" r="9" class="rn cle"/>
+<text x="470" y="40" class="rl" text-anchor="middle">Les Cayes</text>
+<text x="470" y="56" class="rd" text-anchor="middle">26 avril 1785</text>
+<text x="470" y="92" class="rt2" text-anchor="middle">Naissance de Jean Rabin à</text>
+<text x="470" y="106" class="rt2" text-anchor="middle">Saint-Domingue</text>
+<circle cx="670" cy="66" r="6" class="rn"/>
+<text x="670" y="40" class="rl" text-anchor="middle">Couëron</text>
+<text x="670" y="56" class="rd" text-anchor="middle">1788</text>
+<text x="670" y="92" class="rt2" text-anchor="middle">Enfance à La Gerbetière,</text>
+<text x="670" y="106" class="rt2" text-anchor="middle">près de Nantes</text>
+<circle cx="870" cy="66" r="6" class="rn"/>
+<text x="870" y="40" class="rl" text-anchor="middle">New York</text>
+<text x="870" y="56" class="rd" text-anchor="middle">1803</text>
+<text x="870" y="92" class="rt2" text-anchor="middle">Départ pour les États-Unis</text>
+<text x="870" y="106" class="rt2" text-anchor="middle">sous un faux passeport</text>
+</svg></div>
+
+  <h3 style="margin-top:78px;font-size:26px">Une vie</h3>
+  <ul class="chrono"><li><span class="an">1785</span><span class="tx">Naissance aux Cayes, à Saint-Domingue, sous le nom de Jean Rabin. Sa mère meurt quelques mois plus tard.</span></li><li><span class="an">1788</span><span class="tx">Son père l'emmène en France. Il grandit à La Gerbetière, à Couëron, chez l'épouse légitime de celui-ci.</span></li><li><span class="an">1794</span><span class="tx">Adopté sous le prénom de Fougère, nom du jour de sa naissance au calendrier républicain.</span></li><li><span class="an">1803</span><span class="tx">Départ pour les États-Unis avec un faux passeport, destiné à lui éviter la conscription napoléonienne.</span></li><li><span class="an">1808</span><span class="tx">Épouse Lucy Bakewell. Le couple part tenter sa chance sur la frontière du Kentucky.</span></li><li><span class="an">1819</span><span class="tx">Faillite, prison pour dettes. Il n'a plus que son crayon pour vivre et se met au portrait.</span></li><li><span class="an">1826</span><span class="tx">Embarque pour l'Angleterre avec 250 dessins, cherche graveurs et souscripteurs.</span></li><li><span class="an">1827</span><span class="tx">Première livraison de <em>The Birds of America</em>. La gravure commence à Édimbourg chez Lizars, puis passe à Londres chez Havell.</span></li><li><span class="an">1838</span><span class="tx">Dernière planche. Onze ans de parution, 435 planches, 1 065 oiseaux.</span></li><li><span class="an">1851</span><span class="tx">Meurt à Manhattan, dans le domaine qui deviendra le quartier d'Audubon Park.</span></li></ul>
+
+  <h3 style="margin-top:78px;font-size:26px">L'œuvre</h3>
+  <p style="margin-top:14px"><em>The Birds of America</em> est une folie technique autant
+  qu'artistique. Audubon exige que chaque oiseau soit représenté grandeur nature : il faut
+  donc du papier « double éléphant », le plus grand format disponible, et le flamant rose
+  doit courber le cou pour tenir dans la page. Chaque planche est gravée à l'eau-forte et
+  à l'aquatinte, puis coloriée à la main, une par une.</p>
+  <div class="faits"><div class="fait"><b>435</b><span>planches gravées, coloriées à la main, publiées de 1827 à 1838</span></div><div class="fait"><b>1 065</b><span>oiseaux représentés, tous à taille réelle</span></div><div class="fait"><b>97 × 66</b><span>centimètres : le format « double éléphant », imposé par la taille du héron</span></div><div class="fait"><b>11,5</b><span>millions de dollars, record mondial pour un livre imprimé, Sotheby's 2010</span></div></div>
+  <div class="photos" style="margin-top:44px">
+    <figure class="ph tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Audubon_Birds_of_America.jpg?width=1200" alt="The Birds of America" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption><em>The Birds of America</em>, l'ouvrage de toute une vie, publié à ses frais pendant onze ans. <span class="cr">Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:Audubon_Birds_of_America.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_birds_of_America._%28Livraison%29_1%2C_Plate_I%2C_Great_American_Cock_Male_%3B_Vulgo_Wild_Turkey_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53144013v.jpg?width=1200" alt="Planche I : le dindon sauvage" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Planche I : le dindon sauvage, gravé par W. H. Lizars à Édimbourg. Audubon fit du « gobbler » son sceau personnel, avec la devise <em>America my country</em>. <span class="cr">BnF via Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:The_birds_of_America._%28Livraison%29_1%2C_Plate_I%2C_Great_American_Cock_Male_%3B_Vulgo_Wild_Turkey_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53144013v.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_birds_of_America._%28Livraison_1%29%2C_Plate_V%2C_Bonaparte_Flycatcher_%28i.e._Canada_warbler%29_%3B_Plant_seed_pud_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53143985q.jpg?width=1200" alt="Planche V : la paruline du Canada" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Planche V, première livraison. Chaque oiseau est peint grandeur nature, sur sa plante nourricière. <span class="cr">BnF via Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:The_birds_of_America._%28Livraison_1%29%2C_Plate_V%2C_Bonaparte_Flycatcher_%28i.e._Canada_warbler%29_%3B_Plant_seed_pud_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53143985q.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+  </div>
+  <p style="margin-top:36px">Le financement se fait par souscription, planche après planche,
+  pendant onze ans. L'entreprise coûte à Audubon 115 640 dollars de l'époque — plus de deux
+  millions d'aujourd'hui — qu'il finance en vendant des copies à l'huile, des portraits et
+  des peaux d'animaux chassés en route. Moins de cent vingt exemplaires complets subsistent.
+  En décembre 2010, l'un d'eux est adjugé 11,5 millions de dollars chez Sotheby's à Londres :
+  le prix le plus élevé jamais payé pour un livre imprimé.</p>
+
+  <h3 style="margin-top:78px;font-size:26px">Trois anecdotes</h3>
+  <div class="grid2" style="margin-top:22px">
+    <div>
+      <p><strong>Le fil d'argent.</strong> Au printemps 1804, à Mill Grove en Pennsylvanie,
+      Audubon noue un fil d'argent à la patte de cinq oisillons — des moucherolles phébi —
+      pour savoir si les oiseaux reviennent nicher où ils sont nés. Il affirme en avoir
+      retrouvé deux l'année suivante. L'histoire lui vaut le titre de premier bagueur
+      d'oiseaux d'Amérique. Elle est aujourd'hui contestée : un taux de retour de 40 %
+      est vingt fois supérieur à ce qu'observent les ornithologues modernes, et une
+      reconstitution des dates montre qu'il n'était pas en Pennsylvanie au printemps 1805.</p>
+      <p><strong>Le canular des poissons.</strong> En 1818, le naturaliste Constantine
+      Rafinesque séjourne chez lui dans le Kentucky. Une nuit, croyant capturer une
+      chauve-souris d'espèce nouvelle, il fracasse le violon favori de son hôte. Audubon se
+      venge en lui décrivant des poissons et des mammifères de l'Ohio entièrement imaginaires,
+      que Rafinesque publie sérieusement comme espèces nouvelles.</p>
+    </div>
+    <div>
+      <p><strong>L'aigle qui n'existait pas.</strong> Sa carrière décolle avec la
+      « Bird of Washington », un aigle géant qu'il dit avoir observé et dont il fait une
+      planche spectaculaire. Aucun spécimen n'a jamais été retrouvé, aucune observation
+      indépendante n'est venue la confirmer, et les travaux récents concluent à une
+      fabrication. L'oiseau qui l'a rendu célèbre n'a probablement jamais volé.</p>
+      <p>Ces trois épisodes ne retirent rien à l'œuvre. Ils rappellent qu'Audubon était
+      aussi un entrepreneur en quête de souscripteurs, dans un milieu scientifique où la
+      découverte d'une espèce valait une réputation.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:78px;font-size:26px">Ce qui porte son nom</h3>
+  <div class="grid2" style="margin-top:22px">
+    <div>
+      <p>Une montagne du Colorado, d'abord : le <strong>mont Audubon</strong>, 4 032 mètres,
+      dans les Indian Peaks du Front Range, au nord-ouest de Boulder. Un quartier de
+      Manhattan ensuite, Audubon Park, bâti sur le domaine où il finit ses jours. Plusieurs
+      oiseaux enfin — la paruline d'Audubon, l'oriole d'Audubon, le puffin d'Audubon.</p>
+      <p>Et surtout la <strong>National Audubon Society</strong>, fondée en 1905, plus d'un
+      demi-siècle après sa mort et sans aucun lien avec sa famille. C'est aujourd'hui la
+      plus ancienne et la plus vaste organisation de protection des oiseaux des États-Unis.</p>
+      <p>Deux ouvrages portent aussi son nom, et disent bien ce qu'il est devenu là-bas. À
+      Henderson, dans le Kentucky, où il tint boutique de 1810 à 1819, un musée bâti en 1938
+      abrite l'une des plus grandes collections de ses originaux — dans un bâtiment de style
+      normand français élevé en hommage à ses origines, dont la tour comporte des niches
+      creusées exprès pour que les oiseaux y nichent.</p>
+      <p>Et sur le Mississippi, entre les paroisses de Pointe Coupee et de West Feliciana,
+      le <strong>pont John James Audubon</strong>, ouvert en mai 2011. Sa travée centrale de
+      482 mètres en fit à sa mise en service le plus long pont à haubans de l'hémisphère
+      occidental. Il remplace un bac et reste le seul franchissement du fleuve sur cent
+      cinquante kilomètres. Il enjambe le fleuve à quelques milles d'Oakley Plantation, où
+      Audubon peignit une partie de ses oiseaux en 1821.</p>
+    </div>
+    <div>
+      <p>Ce nom fait débat. Audubon possédait des esclaves — neuf personnes travaillaient
+      dans sa maison — les a vendus lors de sa faillite, en a racheté dans les années 1820,
+      et s'est publiquement opposé à l'abolition. Le 15 mars 2023, après plus d'un an de
+      consultation, le conseil d'administration de la National Audubon Society a voté le
+      maintien du nom, estimant que l'organisation « dépasse le nom d'une seule personne »,
+      tout en engageant 25 millions de dollars pour ses programmes de diversité. Trois
+      administrateurs ont démissionné.</p>
+    </div>
+  </div>
+
+  <div class="photos deux" style="margin-top:40px">
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Audubon_State_Park_Museum.jpg?width=1200" alt="Le musée du John James Audubon State Park" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Le musée de Henderson, Kentucky, bâti en 1938 dans un style normand français en hommage à ses origines. Sa tour est percée de niches où les oiseaux peuvent nicher. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:John_James_Audubon_State_Park_Museum.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Bridge_5.jpg?width=1200" alt="Le pont John James Audubon sur le Mississippi" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Le pont John James Audubon, ouvert en 2011 : 482 mètres de travée centrale, le plus long pont à haubans de l'hémisphère occidental à sa mise en service. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:John_James_Bridge_5.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+  </div>
+
+  <h3 style="margin-top:78px;font-size:26px">Sa descendance</h3>
+  <p style="margin-top:14px">Ses deux fils survivants, Victor Gifford et John Woodhouse,
+  épousèrent les deux filles de John Bachman, le pasteur-naturaliste de Charleston qui
+  collabora aux <em>Quadrupèdes vivipares d'Amérique</em> : Maria Rebecca et Mary Eliza,
+  mortes toutes deux avant trente ans, à un an d'intervalle. Les deux frères se
+  remarièrent.</p>
+  <p>La lignée masculine américaine s'est ensuite presque éteinte. Selon le biographe
+  Francis Hobart Herrick, William Bakewell Audubon (1847-1932), petit-fils du peintre,
+  émigra en Australie ; son fils Leonard Benjamin, né en 1888, resta l'unique représentant
+  mâle de la branche américaine des Audubon.</p>
+</section>
+</div>
+</div>
 
 <div class="wide">
 <section>
-  <div class="num-sec">I · L'arbre</div>
+  <div class="num-sec">V · Le pays aujourd'hui</div>
+  <h2>Les Touches</h2>
+  <p class="chapo">Deux mille six cent trente-huit habitants en 2023, canton de
+  Nort-sur-Erdre. Le hameau des Mazures existe toujours. L'église Sainte-Mélaine, où
+  Jeanne Rabine fut baptisée en 1758, a été reconstruite au XIX<sup>e</sup> siècle, mais
+  la commune entretient la mémoire de celle qui en est partie.</p>
+  <div class="photos" style="margin-top:40px">
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_du_Mont-Juillet_%28Les_Touches%29.JPG?width=1200" alt="Panorama depuis le Mont-Juillet aux Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Le bocage vu du Mont-Juillet : le paysage de neuf générations sur seize. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:Panorama_du_Mont-Juillet_%28Les_Touches%29.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Les_Touches_-_Cassini.JPG?width=1200" alt="Les Touches sur la carte de Cassini" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Les Touches sur la carte de Cassini, levée peu avant le départ de Jeanne Rabine. <span class="cr">Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:Les_Touches_-_Cassini.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG?width=1200" alt="Église Sainte-Mélaine des Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>L'église Sainte-Mélaine, reconstruite au XIX<sup>e</sup> siècle. <span class="cr">Llann Wé², CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="num-sec">VI · L'arbre</div>
   <h2>Quatre cent vingt-six personnes,<br>rangées en cercles</h2>
   <p class="chapo">Chaque anneau est une génération, chaque secteur un ancêtre. Le vert
   signale une personne identifiée, le beige une case restée vide. Les noms n'apparaissent
@@ -636,7 +1066,7 @@ footer h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(
 </section>
 
 <section>
-  <div class="num-sec">II · Ce que la mémoire retient</div>
+  <div class="num-sec">VII · Ce que la mémoire retient</div>
   <h2>L'échelle des générations</h2>
   <p class="chapo">Chaque génération double le nombre théorique d'ancêtres : 2 parents,
   4 grands-parents, 8 arrière-grands-parents. À la seizième, il en faudrait 65 536. Le
@@ -865,97 +1295,9 @@ footer h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(
   identifiés : c'est la limite pratique des registres de Loire-Atlantique, dont les plus
   anciens remontent au milieu du XVI<sup>e</sup> siècle.</p>
 </section>
-</div>
-
-<div class="wide">
-<section>
-  <div class="num-sec">III · Le pays</div>
-  <h2>Un mouchoir de poche</h2>
-  <p class="chapo">Sur les 426 ancêtres, l'écrasante majorité naît dans une poignée de
-  paroisses du nord de la Loire-Inférieure, entre l'Erdre et la Loire. Mésanger et
-  Les Touches à elles seules en fournissent quatre-vingt-treize.</p>
-  <div class="viz"><svg viewBox="0 0 940 560" role="img" aria-label="Carte des communes d'origine">
-<circle cx="591.5" cy="238.9" r="248.7" class="ray"/>
-<text x="591.5" y="8.2" class="ray-t" text-anchor="middle">rayon de 25 km</text>
-<g transform="translate(36,526)">
-<line x1="0" y1="0" x2="99.5" y2="0" class="sc"/>
-<line x1="0" y1="-5" x2="0" y2="5" class="sc"/>
-<line x1="99.5" y1="-5" x2="99.5" y2="5" class="sc"/>
-<text x="49.7" y="-11" class="sc-t" text-anchor="middle">10 km</text>
-</g>
-<g transform="translate(900,44)"><path d="M0,-22 L0,10 M0,-22 L-5,-13 M0,-22 L5,-13" class="nord"/><text x="0" y="24" class="sc-t" text-anchor="middle">N</text></g>
-<circle cx="591.5" cy="238.9" r="24.5" class="pt"/>
-<text x="622.0" y="237.9" class="lb">Mésanger</text>
-<text x="622.0" y="250.9" class="lb2">56</text>
-<circle cx="451.3" cy="212.8" r="20.8" class="pt"/>
-<text x="478.2" y="211.8" class="lb">Les Touches</text>
-<text x="478.2" y="224.8" class="lb2">37</text>
-<circle cx="403.3" cy="373.1" r="18.0" class="pt"/>
-<text x="427.3" y="372.1" class="lb">Carquefou</text>
-<text x="427.3" y="385.1" class="lb2">25</text>
-<circle cx="502.6" cy="248.1" r="15.4" class="pt"/>
-<text x="524.0" y="247.1" class="lb">Ligné</text>
-<text x="524.0" y="260.1" class="lb2">16</text>
-<circle cx="547.3" cy="134.0" r="15.4" class="pt"/>
-<text x="568.7" y="133.0" class="lb">Riaillé</text>
-<text x="568.7" y="146.0" class="lb2">16</text>
-<circle cx="436.2" cy="259.2" r="14.0" class="pt"/>
-<text x="456.2" y="258.2" class="lb">Petit-Mars</text>
-<text x="456.2" y="271.2" class="lb2">12</text>
-<circle cx="708.8" cy="248.4" r="13.6" class="pt"/>
-<text x="728.5" y="247.4" class="lb">Saint-Herblon</text>
-<text x="728.5" y="260.4" class="lb2">11</text>
-<circle cx="586.3" cy="205.5" r="11.9" class="pt"/>
-<text x="604.2" y="204.5" class="lb">Teillé</text>
-<text x="604.2" y="217.5" class="lb2">7</text>
-<circle cx="610.0" cy="148.4" r="11.4" class="pt"/>
-<text x="627.4" y="147.4" class="lb">Bonnœuvre</text>
-<text x="627.4" y="160.4" class="lb2">6</text>
-<circle cx="560.6" cy="96.0" r="10.2" class="pt"/>
-<text x="576.8" y="95.0" class="lb">Grand-Auverné</text>
-<text x="576.8" y="108.0" class="lb2">4</text>
-<circle cx="653.2" cy="202.8" r="10.2" class="pt"/>
-<text x="669.4" y="201.8" class="lb">Pouillé-les-Côteaux</text>
-<text x="669.4" y="214.8" class="lb2">4</text>
-<circle cx="358.5" cy="460.6" r="4" class="pt-ref"/>
-<text x="367.5" y="464.6" class="lb-ref">Nantes</text>
-<circle cx="639.9" cy="296.8" r="4" class="pt-ref"/>
-<text x="648.9" y="300.8" class="lb-ref">Ancenis</text>
-<circle cx="231.2" cy="464.0" r="5" class="pt-aud"/>
-<text x="241.2" y="463.0" class="lb-aud">Couëron</text>
-<text x="241.2" y="476.0" class="lb2">enfance d'Audubon</text>
-</svg></div>
-  <p class="leg">Carte schématique. La taille des points est proportionnelle au nombre
-  d'ancêtres nés dans la commune. Nantes et Ancenis figurent comme repères ; Couëron,
-  en rouge, apparaîtra plus loin.</p>
-  <div class="grid2" style="margin-top:56px">
-    <div>
-      <p>Cette concentration n'a rien d'anecdotique. Elle raconte une société où l'on
-      épousait sa voisine, où la terre ne se quittait pas, et où les mêmes patronymes
-      reviennent de génération en génération. Les actes en portent la trace directe :
-      Pierre Ouary et Anne Ouarie, mariés vers 1730, étaient cousins. Toute la descendance
-      remonte donc deux fois au même ancêtre du XVI<sup>e</sup> siècle, par deux chemins
-      distincts.</p>
-      <p>Deux exceptions rompent ce cercle. Les Vavasseur, forgerons, viennent des confins
-      du Morbihan et des Côtes-d'Armor, à cent cinquante kilomètres de là. Et une branche
-      part pour l'Amérique — c'est l'objet de la dernière partie.</p>
-      <h3 style="margin-top:44px">De quoi vivait-on</h3>
-      <ul class="barres" style="max-width:520px"><li><span class="b">Laboureur<i style="width:100.0%"></i></span><span class="v">22</span></li><li><span class="b">Cultivatrice<i style="width:36.4%"></i></span><span class="v">8</span></li><li><span class="b">Cultivateur<i style="width:18.2%"></i></span><span class="v">4</span></li><li><span class="b">Forgeron<i style="width:13.6%"></i></span><span class="v">3</span></li><li><span class="b">Boulanger<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Aubergiste<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Maçon<i style="width:9.1%"></i></span><span class="v">2</span></li><li><span class="b">Métayer<i style="width:4.5%"></i></span><span class="v">1</span></li><li><span class="b">Menuisier<i style="width:4.5%"></i></span><span class="v">1</span></li><li><span class="b">Ménagère<i style="width:4.5%"></i></span><span class="v">1</span></li></ul>
-      <p class="leg">Métiers relevés sur les seuls ancêtres directs. « Laboureur » ne
-      désigne pas un journalier : c'est le paysan qui possède son attelage et ses charrues,
-      le haut de la hiérarchie villageoise.</p>
-    </div>
-    <div>
-      <h3>Les communes d'origine</h3>
-      <ul class="barres"><li><span class="b">Mésanger<i style="width:100.0%"></i></span><span class="v">56</span></li><li><span class="b">Les Touches<i style="width:66.1%"></i></span><span class="v">37</span></li><li><span class="b">Carquefou<i style="width:44.6%"></i></span><span class="v">25</span></li><li><span class="b">Ligné<i style="width:28.6%"></i></span><span class="v">16</span></li><li><span class="b">Riaillé<i style="width:28.6%"></i></span><span class="v">16</span></li><li><span class="b">Petit-Mars<i style="width:21.4%"></i></span><span class="v">12</span></li><li><span class="b">Saint-Herblon<i style="width:19.6%"></i></span><span class="v">11</span></li><li><span class="b">Teillé<i style="width:12.5%"></i></span><span class="v">7</span></li><li><span class="b">Bonnœuvre<i style="width:10.7%"></i></span><span class="v">6</span></li><li><span class="b">Grand-Auverné<i style="width:7.1%"></i></span><span class="v">4</span></li><li><span class="b">Pouillé-les-Côteaux<i style="width:7.1%"></i></span><span class="v">4</span></li></ul>
-      <h3 style="margin-top:44px">Les patronymes qui reviennent</h3>
-      <div class="nuage"><span>OUARY <b>15</b></span><span>BONNET <b>9</b></span><span>MULOISE <b>9</b></span><span>DUTERTRE <b>9</b></span><span>JOURDON <b>8</b></span><span>GODARD <b>8</b></span><span>LEFEUVRE <b>8</b></span><span>LEDUC <b>7</b></span><span>SEBILLEAU <b>7</b></span><span>DAVODEAU <b>7</b></span><span>BLANCHET <b>6</b></span><span>LERAY <b>6</b></span><span>DELANOUE <b>6</b></span><span>RIGAUD <b>6</b></span></div>
-    </div>
-  </div>
-</section>
 
 <section>
-  <div class="num-sec">IV · Vivre et mourir</div>
+  <div class="num-sec">VIII · Vivre et mourir</div>
   <h2>Une espérance de vie qui recule<br>avant de bondir</h2>
   <p class="chapo">Âge moyen au décès, calculé sur les 1 158 personnes de l'arbre dont on
   connaît à la fois la naissance et la mort, regroupées par demi-siècle de naissance.</p>
@@ -1019,320 +1361,6 @@ footer h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;color:var(
   que les registres oublient le plus.</p>
 </section>
 </div>
-
-<div class="wide">
-<section>
-  <div class="num-sec">V · Trois vies</div>
-  <h2>Sortir de l'anonymat<br>des registres</h2>
-  <p class="chapo">Un ancêtre paysan ne laisse en général que trois lignes : un baptême, un
-  mariage, une sépulture. Trois hommes de cette lignée font exception, parce qu'un
-  événement les a jetés dans les archives — une guerre civile, une industrie, une
-  photographie.</p>
-
-  <div class="vies">
-    <article class="vie">
-      <div class="rang">7<sup>e</sup> génération</div>
-      <h3>Jacques Guérin</h3>
-      <div class="dates">vers 1747 — 7 juin 1794</div>
-      <div class="role">boulanger, aubergiste, officier municipal</div>
-      <p>Il tenait à Riaillé une boulangerie et l'auberge de <em>L'Écu de France</em>, et
-      servait la commune sous la Révolution. Le 19 prairial an II, les chouans du Segréen
-      menés par Sarrazin font une incursion en Loire-Inférieure : ils massacrent une
-      trentaine de républicains à Riaillé et détruisent le haut fourneau. Jacques Guérin
-      est tué dans son arrière-boutique.</p>
-      <p>Son beau-frère Jacques Letort, maire de Saint-Mars-la-Jaille, avait été fusillé
-      six mois plus tôt. Dans ce pays-là, la Révolution ne fut pas une abstraction
-      parisienne : elle passa de ferme en ferme.</p>
-    </article>
-    <article class="vie">
-      <div class="rang">9<sup>e</sup> génération</div>
-      <h3>François Vavasseur</h3>
-      <div class="dates">1699 — 1762</div>
-      <div class="role">forgeron aux Forges des Salles</div>
-      <p>Seule branche non paysanne de toute l'ascendance, et seule venue de Bretagne
-      intérieure. Il travaillait au fond de la forêt de Quénécan, au sud de l'actuel lac de
-      Guerlédan, dans un village sidérurgique complet : maison du maître de forges,
-      logements ouvriers, cantine, école, chapelle.</p>
-      <p>Le site a cessé toute activité en 1877 et n'a pratiquement pas bougé depuis. Classé
-      à l'inventaire des Monuments historiques en 1980, il se visite aujourd'hui — c'est
-      l'un des rares endroits où l'on peut encore voir, presque intact, le décor de travail
-      d'un ancêtre du XVIII<sup>e</sup> siècle.</p>
-    </article>
-    <article class="vie">
-      <div class="rang">3<sup>e</sup> génération</div>
-      <h3>Louis Frédéric Bonnet</h3>
-      <div class="dates">1884 — 1957</div>
-      <div class="role">brancardier, valet de ferme, cultivateur</div>
-      <p>Brancardier pendant la Grande Guerre. Son frère Henri y est tué en 1915, à
-      vingt-neuf ans, dans l'attaque de Quennevières. Une photographie le montre en tenue,
-      brassard au bras.</p>
-      <p>Avant d'exploiter une très petite ferme à Carquefou, il fut employé — « valet »,
-      disait-on dans la famille — du marquis de Dion, probablement au château de Maubreuil.
-      Soit le même homme qui fonda les usines De Dion-Bouton, un temps premier constructeur
-      automobile du monde. L'écart entre les deux destins, dans le même champ de vision,
-      dit assez bien ce qu'était la société rurale de 1910.</p>
-    </article>
-  </div>
-
-  <blockquote>
-    Nous René Chollet officier public préposé pour l'exécution de la loi du 20 septembre
-    1792 dans le territoire de la commune de Riaillé, département de la Loire-Inférieure,
-    district d'Ancenis, sur la déclaration qui nous a été faite par les veuves des
-    ci-dessous dénommés assassinés…
-    <cite>Registre d'état civil de Riaillé, 19 prairial an II</cite>
-  </blockquote>
-</section>
-
-<section>
-  <div class="num-sec">VI · 1914-1918</div>
-  <h2>Cinq hommes</h2>
-  <p class="chapo">L'arbre recense cinq hommes en âge de combattre morts entre 1914 et 1916.
-  Aucun n'est un ancêtre direct : ce sont des frères, des beaux-frères, des cousins. C'est
-  exactement à cela que ressemble une famille après la guerre — les lignées continuent par
-  ceux qui sont revenus.</p>
-  <ul class="morts"><li><span class="n">Jean Antoine Penaud</span><span class="a">32 ans · 1914</span><span class="l">Verneuil-Courtonne, Aisne</span></li><li><span class="n">Henri Auguste Bonnet</span><span class="a">29 ans · 1915</span><span class="l">Quennevières, Oise</span></li><li><span class="n">Augustin Pierre Chaintrier</span><span class="a">26 ans · 1915</span><span class="l">Souain-Perthes-lès-Hurlus, Marne</span></li><li><span class="n">Jean Marie Joseph Jumois</span><span class="a">33 ans · 1916</span><span class="l">Tahure, Marne</span></li><li><span class="n">Augustin Rechignard</span><span class="a">39 ans · 1916</span><span class="l">Froidos, Meuse</span></li></ul>
-  <p style="margin-top:26px">Quennevières, Souain, Tahure : trois noms qui ne disent plus
-  rien et qui furent, en 1915, des offensives entières.</p>
-</section>
-</div>
-
-<div class="aud">
-<div class="wide">
-<section style="border-top:0">
-  <div class="num-sec">VII · Le cousin d'Amérique</div>
-  <h2>John James Audubon</h2>
-  <p class="chapo">Le plus célèbre peintre d'oiseaux du monde est né Jean Rabin, le
-  26 avril 1785 aux Cayes, à Saint-Domingue. Sa mère, Jeanne Rabine, était née vingt-sept
-  ans plus tôt au hameau des Mazures, commune des Touches — dans la paroisse même où les
-  Ouary labouraient depuis deux siècles. Les deux lignées partent du même homme.</p>
-
-  <div class="photos deux" style="margin-top:44px">
-    <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Audubon%2C_bird_naturalist_LCCN2002700147.jpg?width=1200" alt="Portrait de John James Audubon" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>John James Audubon. Le naturaliste posa en trappeur pour servir sa légende américaine. <span class="cr">Library of Congress, domaine public · <a href="https://commons.wikimedia.org/wiki/File:John_James_Audubon%2C_bird_naturalist_LCCN2002700147.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-    <figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/John_James_Audubon%2C_1785-1851%2C_head-and-shoulders_portrait%2C_facing_right_in_oval_memorial_portrait_fringed_by_bird_vignettes_LCCN2005689323.jpg?width=1200" alt="Portrait commémoratif d&#x27;Audubon entouré de vignettes d&#x27;oiseaux" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Portrait commémoratif, entouré de vignettes tirées de ses planches. <span class="cr">Library of Congress, domaine public · <a href="https://commons.wikimedia.org/wiki/File:John_James_Audubon%2C_1785-1851%2C_head-and-shoulders_portrait%2C_facing_right_in_oval_memorial_portrait_fringed_by_bird_vignettes_LCCN2005689323.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-  </div>
-
-  <h3 style="margin-top:78px;font-size:26px">Les deux branches</h3>
-  <p style="margin-top:14px">Guillaume Ouary, laboureur aux Touches, meurt en 1652. Deux de
-  ses enfants ouvrent deux histoires sans rapport : son fils Pierre reste au village, sa
-  fille Renée est à l'origine de la lignée qui mènera à Audubon. Onze générations d'un côté,
-  sept de l'autre.</p>
-  <div class="viz"><svg viewBox="0 0 940 832" role="img" aria-label="Les deux branches issues de Guillaume Ouary">
-<rect x="320" y="26" width="300" height="56" rx="3" class="bx-src"/>
-<text x="470" y="50" class="bt-src" text-anchor="middle">Guillaume Ouary</text>
-<text x="470" y="70" class="bt-src2" text-anchor="middle">vers 1566 – 1652 · Les Touches</text>
-<path d="M470,82 L470,90 L244,90" class="bl"/>
-<path d="M470,82 L470,90 L696,90" class="bl"/>
-<line x1="244" y1="90" x2="244" y2="742" class="bl"/>
-<circle cx="244" cy="116" r="5" class="bn g"/>
-<text x="226" y="115" class="bt " text-anchor="end">Pierre Ouary</text>
-<text x="226" y="130" class="bt2" text-anchor="end">1630–1697</text>
-<circle cx="244" cy="178" r="5" class="bn g"/>
-<text x="226" y="177" class="bt " text-anchor="end">Julien Ouary</text>
-<text x="226" y="192" class="bt2" text-anchor="end">1664–1723</text>
-<circle cx="244" cy="240" r="5" class="bn g"/>
-<text x="226" y="239" class="bt " text-anchor="end">Pierre Ouary</text>
-<text x="226" y="254" class="bt2" text-anchor="end">1701–1774</text>
-<circle cx="244" cy="302" r="5" class="bn g"/>
-<text x="226" y="301" class="bt " text-anchor="end">Julien Ouary</text>
-<text x="226" y="316" class="bt2" text-anchor="end">1738–1785</text>
-<circle cx="244" cy="364" r="5" class="bn g"/>
-<text x="226" y="363" class="bt " text-anchor="end">François Ouary</text>
-<text x="226" y="378" class="bt2" text-anchor="end">1774–1847</text>
-<circle cx="244" cy="426" r="5" class="bn g"/>
-<text x="226" y="425" class="bt " text-anchor="end">Léon Julien Ouary</text>
-<text x="226" y="440" class="bt2" text-anchor="end">1824–1903</text>
-<circle cx="244" cy="488" r="5" class="bn g"/>
-<text x="226" y="487" class="bt " text-anchor="end">Marie Rosalie Ouary</text>
-<text x="226" y="502" class="bt2" text-anchor="end">1855–1939</text>
-<circle cx="244" cy="550" r="5" class="bn g"/>
-<text x="226" y="549" class="bt " text-anchor="end">Marguerite Juvin</text>
-<text x="226" y="564" class="bt2" text-anchor="end">1892–1958</text>
-<circle cx="244" cy="612" r="5" class="bn g"/>
-<text x="226" y="611" class="bt " text-anchor="end">Joseph Muloise</text>
-<text x="226" y="626" class="bt2" text-anchor="end">1927–2020</text>
-<circle cx="244" cy="674" r="5" class="bn g"/>
-<text x="226" y="673" class="bt " text-anchor="end">…</text>
-<text x="226" y="688" class="bt2" text-anchor="end">génération suivante</text>
-<circle cx="244" cy="736" r="8" class="bn g fin"/>
-<text x="226" y="735" class="bt fin" text-anchor="end">Yann Bonnet</text>
-<text x="226" y="750" class="bt2" text-anchor="end">1981</text>
-<line x1="696" y1="90" x2="696" y2="494" class="bl"/>
-<circle cx="696" cy="116" r="5" class="bn d"/>
-<text x="714" y="115" class="bt " text-anchor="start">Renée Ouary</text>
-<text x="714" y="130" class="bt2" text-anchor="start">1625–1711</text>
-<circle cx="696" cy="178" r="5" class="bn d"/>
-<text x="714" y="177" class="bt " text-anchor="start">Luc Callo</text>
-<text x="714" y="192" class="bt2" text-anchor="start">1658–1688</text>
-<circle cx="696" cy="240" r="5" class="bn d"/>
-<text x="714" y="239" class="bt " text-anchor="start">Marie Callo</text>
-<text x="714" y="254" class="bt2" text-anchor="start">1683–1715</text>
-<circle cx="696" cy="302" r="5" class="bn d"/>
-<text x="714" y="301" class="bt " text-anchor="start">Marie Letexier</text>
-<text x="714" y="316" class="bt2" text-anchor="start">1712–1788</text>
-<circle cx="696" cy="364" r="5" class="bn d"/>
-<text x="714" y="363" class="bt " text-anchor="start">Guillaume Rabine</text>
-<text x="714" y="378" class="bt2" text-anchor="start">1734–1802</text>
-<circle cx="696" cy="426" r="5" class="bn d"/>
-<text x="714" y="425" class="bt " text-anchor="start">Jeanne Rabine</text>
-<text x="714" y="440" class="bt2" text-anchor="start">1758–1785</text>
-<circle cx="696" cy="488" r="8" class="bn d fin"/>
-<text x="714" y="487" class="bt fin" text-anchor="start">John James Audubon</text>
-<text x="714" y="502" class="bt2" text-anchor="start">1785–1851</text>
-</svg></div>
-  <p class="leg">Cousinage au sixième degré, avec quatre générations d'écart.</p>
-
-  <h3 style="margin-top:78px;font-size:26px">Jeanne Rabine, fille de chambre</h3>
-  <div class="grid2" style="margin-top:22px">
-    <div>
-      <p>Baptisée aux Touches, à l'église Sainte-Mélaine, le 14 mars 1758. Le tanneur Cébron,
-      voisin du hameau des Mazures, la recommande à Jacques Pallon de la Bouverie, juge en
-      retraite devenu planteur. Le 23 octobre 1781, elle embarque quai de la Fosse à Nantes
-      sur <em>Le Conquérant</em>, avec la famille Pallon, pour Saint-Domingue. Elle a
-      vingt-trois ans et ne reverra jamais la Bretagne.</p>
-      <p>Aux Cayes, elle rencontre Jean Audubon, capitaine nantais, planteur et négrier,
-      marié en France. Elle meurt quelques mois après la naissance de son fils, emportée par
-      une fièvre tropicale. L'enfant est confié à Catherine Bouffard, compagne de son père,
-      puis ramené en France en 1788.</p>
-      <p>Il grandit à La Gerbetière, à Couëron, chez l'épouse légitime de son père. En 1794,
-      le couple l'adopte sous le prénom de <em>Fougère</em> — le nom du jour de sa naissance
-      au calendrier républicain. En 1803, muni d'un faux passeport destiné à lui éviter la
-      conscription, il embarque pour les États-Unis sous le nom de John James Audubon.</p>
-    </div>
-    <div><figure class="ph "><img src="https://commons.wikimedia.org/wiki/Special:FilePath/W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG?width=1200" alt="Église Sainte-Mélaine des Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>L'église Sainte-Mélaine des Touches, paroisse de baptême de Jeanne Rabine en 1758. <span class="cr">Llann Wé², CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure></div>
-  </div>
-  <div class="viz" style="margin-top:44px"><svg viewBox="0 0 940 176" role="img" aria-label="Itinéraire de Jeanne Rabine et de son fils">
-<line x1="70" y1="66" x2="870" y2="66" class="rt"/>
-<circle cx="70" cy="66" r="9" class="rn cle"/>
-<text x="70" y="40" class="rl" text-anchor="middle">Les Touches</text>
-<text x="70" y="56" class="rd" text-anchor="middle">1758</text>
-<text x="70" y="92" class="rt2" text-anchor="middle">Naissance au hameau des</text>
-<text x="70" y="106" class="rt2" text-anchor="middle">Mazures</text>
-<circle cx="270" cy="66" r="6" class="rn"/>
-<text x="270" y="40" class="rl" text-anchor="middle">Nantes</text>
-<text x="270" y="56" class="rd" text-anchor="middle">23 oct. 1781</text>
-<text x="270" y="92" class="rt2" text-anchor="middle">Embarquement quai de la</text>
-<text x="270" y="106" class="rt2" text-anchor="middle">Fosse sur Le Conquérant</text>
-<circle cx="470" cy="66" r="9" class="rn cle"/>
-<text x="470" y="40" class="rl" text-anchor="middle">Les Cayes</text>
-<text x="470" y="56" class="rd" text-anchor="middle">26 avril 1785</text>
-<text x="470" y="92" class="rt2" text-anchor="middle">Naissance de Jean Rabin à</text>
-<text x="470" y="106" class="rt2" text-anchor="middle">Saint-Domingue</text>
-<circle cx="670" cy="66" r="6" class="rn"/>
-<text x="670" y="40" class="rl" text-anchor="middle">Couëron</text>
-<text x="670" y="56" class="rd" text-anchor="middle">1788</text>
-<text x="670" y="92" class="rt2" text-anchor="middle">Enfance à La Gerbetière,</text>
-<text x="670" y="106" class="rt2" text-anchor="middle">près de Nantes</text>
-<circle cx="870" cy="66" r="6" class="rn"/>
-<text x="870" y="40" class="rl" text-anchor="middle">New York</text>
-<text x="870" y="56" class="rd" text-anchor="middle">1803</text>
-<text x="870" y="92" class="rt2" text-anchor="middle">Départ pour les États-Unis</text>
-<text x="870" y="106" class="rt2" text-anchor="middle">sous un faux passeport</text>
-</svg></div>
-
-  <h3 style="margin-top:78px;font-size:26px">Une vie</h3>
-  <ul class="chrono"><li><span class="an">1785</span><span class="tx">Naissance aux Cayes, à Saint-Domingue, sous le nom de Jean Rabin. Sa mère meurt quelques mois plus tard.</span></li><li><span class="an">1788</span><span class="tx">Son père l'emmène en France. Il grandit à La Gerbetière, à Couëron, chez l'épouse légitime de celui-ci.</span></li><li><span class="an">1794</span><span class="tx">Adopté sous le prénom de Fougère, nom du jour de sa naissance au calendrier républicain.</span></li><li><span class="an">1803</span><span class="tx">Départ pour les États-Unis avec un faux passeport, destiné à lui éviter la conscription napoléonienne.</span></li><li><span class="an">1808</span><span class="tx">Épouse Lucy Bakewell. Le couple part tenter sa chance sur la frontière du Kentucky.</span></li><li><span class="an">1819</span><span class="tx">Faillite, prison pour dettes. Il n'a plus que son crayon pour vivre et se met au portrait.</span></li><li><span class="an">1826</span><span class="tx">Embarque pour l'Angleterre avec 250 dessins, cherche graveurs et souscripteurs.</span></li><li><span class="an">1827</span><span class="tx">Première livraison de <em>The Birds of America</em>. La gravure commence à Édimbourg chez Lizars, puis passe à Londres chez Havell.</span></li><li><span class="an">1838</span><span class="tx">Dernière planche. Onze ans de parution, 435 planches, 1 065 oiseaux.</span></li><li><span class="an">1851</span><span class="tx">Meurt à Manhattan, dans le domaine qui deviendra le quartier d'Audubon Park.</span></li></ul>
-
-  <h3 style="margin-top:78px;font-size:26px">L'œuvre</h3>
-  <p style="margin-top:14px"><em>The Birds of America</em> est une folie technique autant
-  qu'artistique. Audubon exige que chaque oiseau soit représenté grandeur nature : il faut
-  donc du papier « double éléphant », le plus grand format disponible, et le flamant rose
-  doit courber le cou pour tenir dans la page. Chaque planche est gravée à l'eau-forte et
-  à l'aquatinte, puis coloriée à la main, une par une.</p>
-  <div class="faits"><div class="fait"><b>435</b><span>planches gravées, coloriées à la main, publiées de 1827 à 1838</span></div><div class="fait"><b>1 065</b><span>oiseaux représentés, tous à taille réelle</span></div><div class="fait"><b>97 × 66</b><span>centimètres : le format « double éléphant », imposé par la taille du héron</span></div><div class="fait"><b>11,5</b><span>millions de dollars, record mondial pour un livre imprimé, Sotheby's 2010</span></div></div>
-  <div class="photos deux" style="margin-top:44px">
-    <figure class="ph tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_birds_of_America._%28Livraison%29_1%2C_Plate_I%2C_Great_American_Cock_Male_%3B_Vulgo_Wild_Turkey_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53144013v.jpg?width=1200" alt="Planche I : le dindon sauvage" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Planche I : le dindon sauvage, gravé par W. H. Lizars à Édimbourg. Audubon fit du « gobbler » son sceau personnel, avec la devise <em>America my country</em>. <span class="cr">BnF via Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:The_birds_of_America._%28Livraison%29_1%2C_Plate_I%2C_Great_American_Cock_Male_%3B_Vulgo_Wild_Turkey_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53144013v.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-    <figure class="ph tall"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The_birds_of_America._%28Livraison_1%29%2C_Plate_V%2C_Bonaparte_Flycatcher_%28i.e._Canada_warbler%29_%3B_Plant_seed_pud_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53143985q.jpg?width=1200" alt="Planche V : la paruline du Canada" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Planche V, première livraison. Chaque oiseau est peint grandeur nature, sur sa plante nourricière. <span class="cr">BnF via Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:The_birds_of_America._%28Livraison_1%29%2C_Plate_V%2C_Bonaparte_Flycatcher_%28i.e._Canada_warbler%29_%3B_Plant_seed_pud_-_estampe_-_Drawn_by_J._J._Audubon_%3B_Engraved_by_W._H._Lizars_Edin.r_-_btv1b53143985q.jpg" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-  </div>
-  <p style="margin-top:36px">Le financement se fait par souscription, planche après planche,
-  pendant onze ans. L'entreprise coûte à Audubon 115 640 dollars de l'époque — plus de deux
-  millions d'aujourd'hui — qu'il finance en vendant des copies à l'huile, des portraits et
-  des peaux d'animaux chassés en route. Moins de cent vingt exemplaires complets subsistent.
-  En décembre 2010, l'un d'eux est adjugé 11,5 millions de dollars chez Sotheby's à Londres :
-  le prix le plus élevé jamais payé pour un livre imprimé.</p>
-
-  <h3 style="margin-top:78px;font-size:26px">Trois anecdotes</h3>
-  <div class="grid2" style="margin-top:22px">
-    <div>
-      <p><strong>Le fil d'argent.</strong> Au printemps 1804, à Mill Grove en Pennsylvanie,
-      Audubon noue un fil d'argent à la patte de cinq oisillons — des moucherolles phébi —
-      pour savoir si les oiseaux reviennent nicher où ils sont nés. Il affirme en avoir
-      retrouvé deux l'année suivante. L'histoire lui vaut le titre de premier bagueur
-      d'oiseaux d'Amérique. Elle est aujourd'hui contestée : un taux de retour de 40 %
-      est vingt fois supérieur à ce qu'observent les ornithologues modernes, et une
-      reconstitution des dates montre qu'il n'était pas en Pennsylvanie au printemps 1805.</p>
-      <p><strong>Le canular des poissons.</strong> En 1818, le naturaliste Constantine
-      Rafinesque séjourne chez lui dans le Kentucky. Une nuit, croyant capturer une
-      chauve-souris d'espèce nouvelle, il fracasse le violon favori de son hôte. Audubon se
-      venge en lui décrivant des poissons et des mammifères de l'Ohio entièrement imaginaires,
-      que Rafinesque publie sérieusement comme espèces nouvelles.</p>
-    </div>
-    <div>
-      <p><strong>L'aigle qui n'existait pas.</strong> Sa carrière décolle avec la
-      « Bird of Washington », un aigle géant qu'il dit avoir observé et dont il fait une
-      planche spectaculaire. Aucun spécimen n'a jamais été retrouvé, aucune observation
-      indépendante n'est venue la confirmer, et les travaux récents concluent à une
-      fabrication. L'oiseau qui l'a rendu célèbre n'a probablement jamais volé.</p>
-      <p>Ces trois épisodes ne retirent rien à l'œuvre. Ils rappellent qu'Audubon était
-      aussi un entrepreneur en quête de souscripteurs, dans un milieu scientifique où la
-      découverte d'une espèce valait une réputation.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:78px;font-size:26px">Ce qui porte son nom</h3>
-  <div class="grid2" style="margin-top:22px">
-    <div>
-      <p>Une montagne du Colorado, d'abord : le <strong>mont Audubon</strong>, 4 032 mètres,
-      dans les Indian Peaks du Front Range, au nord-ouest de Boulder. Un quartier de
-      Manhattan ensuite, Audubon Park, bâti sur le domaine où il finit ses jours. Plusieurs
-      oiseaux enfin — la paruline d'Audubon, l'oriole d'Audubon, le puffin d'Audubon.</p>
-      <p>Et surtout la <strong>National Audubon Society</strong>, fondée en 1905, plus d'un
-      demi-siècle après sa mort et sans aucun lien avec sa famille. C'est aujourd'hui la
-      plus ancienne et la plus vaste organisation de protection des oiseaux des États-Unis.</p>
-    </div>
-    <div>
-      <p>Ce nom fait débat. Audubon possédait des esclaves — neuf personnes travaillaient
-      dans sa maison — les a vendus lors de sa faillite, en a racheté dans les années 1820,
-      et s'est publiquement opposé à l'abolition. Le 15 mars 2023, après plus d'un an de
-      consultation, le conseil d'administration de la National Audubon Society a voté le
-      maintien du nom, estimant que l'organisation « dépasse le nom d'une seule personne »,
-      tout en engageant 25 millions de dollars pour ses programmes de diversité. Trois
-      administrateurs ont démissionné.</p>
-      <p>Plusieurs sections locales ont tranché autrement et se sont rebaptisées
-      « Bird Alliance » : New York, Chicago, Detroit, Washington, la baie de San Francisco.
-      Le débat n'est pas clos.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:78px;font-size:26px">Sa descendance</h3>
-  <p style="margin-top:14px">Ses deux fils survivants, Victor Gifford et John Woodhouse,
-  épousèrent les deux filles de John Bachman, le pasteur-naturaliste de Charleston qui
-  collabora aux <em>Quadrupèdes vivipares d'Amérique</em> : Maria Rebecca et Mary Eliza,
-  mortes toutes deux avant trente ans, à un an d'intervalle. Les deux frères se
-  remarièrent.</p>
-  <p>La lignée masculine américaine s'est ensuite presque éteinte. Selon le biographe
-  Francis Hobart Herrick, William Bakewell Audubon (1847-1932), petit-fils du peintre,
-  émigra en Australie ; son fils Leonard Benjamin, né en 1888, resta l'unique représentant
-  mâle de la branche américaine des Audubon.</p>
-</section>
-</div>
-</div>
-
-<div class="wide">
-<section>
-  <div class="num-sec">VIII · Le pays aujourd'hui</div>
-  <h2>Les Touches</h2>
-  <p class="chapo">Deux mille six cent trente-huit habitants en 2023, canton de
-  Nort-sur-Erdre. Le hameau des Mazures existe toujours. L'église Sainte-Mélaine, où
-  Jeanne Rabine fut baptisée en 1758, a été reconstruite au XIX<sup>e</sup> siècle, mais
-  la commune entretient la mémoire de celle qui en est partie.</p>
-  <div class="photos" style="margin-top:40px">
-    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama_du_Mont-Juillet_%28Les_Touches%29.JPG?width=1200" alt="Panorama depuis le Mont-Juillet aux Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Le bocage vu du Mont-Juillet : le paysage de neuf générations sur seize. <span class="cr">Wikimedia Commons · <a href="https://commons.wikimedia.org/wiki/File:Panorama_du_Mont-Juillet_%28Les_Touches%29.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Les_Touches_-_Cassini.JPG?width=1200" alt="Les Touches sur la carte de Cassini" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>Les Touches sur la carte de Cassini, levée peu avant le départ de Jeanne Rabine. <span class="cr">Wikimedia Commons, domaine public · <a href="https://commons.wikimedia.org/wiki/File:Les_Touches_-_Cassini.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-    <figure class="ph wide-img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG?width=1200" alt="Église Sainte-Mélaine des Touches" loading="lazy" onerror="this.closest('figure').classList.add('ko')"><figcaption>L'église Sainte-Mélaine, reconstruite au XIX<sup>e</sup> siècle. <span class="cr">Llann Wé², CC BY-SA 3.0 · <a href="https://commons.wikimedia.org/wiki/File:W1318-Touches_SteMelaine_XVIII%C2%B01849-1861-1895_51530.JPG" target="_blank" rel="noopener">Wikimedia Commons</a></span></figcaption></figure>
-  </div>
-</section>
-</div>
-
 <footer>
   <div class="wide">
     <div class="fgrid">
