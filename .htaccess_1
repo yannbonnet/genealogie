@@ -1,0 +1,65 @@
+# Configuration Apache — hébergement mutualisé OVH
+# À déposer dans le même dossier que index.html.
+# Chaque bloc est protégé par <IfModule> : si un module manque, il est ignoré
+# au lieu de provoquer une erreur 500.
+
+# ---------------------------------------------------------------- page par défaut
+DirectoryIndex index.html index.htm
+
+# ---------------------------------------------------------------- encodage
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .css .js
+</IfModule>
+
+# ---------------------------------------------------------------- HTTPS
+# Force le passage en HTTPS. À n'activer qu'une fois le certificat SSL
+# délivré par OVH (onglet « Certificats SSL » du manager).
+#
+# ATTENTION — piège propre aux hébergements mutualisés OVH configurés avec un
+# « dossier racine » (ici : genea). Le motif d'une RewriteRule est évalué sur le
+# chemin interne, qui contient encore le nom du dossier. Reconstruire l'adresse
+# avec $1 produisait donc https://genea.bonnet.bzh/genea/ au lieu de la racine.
+# %{REQUEST_URI} contient toujours le chemin public : c'est lui qu'il faut utiliser.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Ne jamais rediriger le dossier de validation ACME : c'est par lui que
+  # Let's Encrypt vérifie le domaine avant d'émettre le certificat. Une
+  # redirection à cet endroit fait échouer la délivrance.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------------------- note
+# Ce site est servi sous genea.bonnet.bzh uniquement : il n'y a pas de variante
+# « www » a rediriger. Rien a ajouter ici.
+
+# ---------------------------------------------------------------- compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------- cache navigateur
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+</IfModule>
+
+# ---------------------------------------------------------------- en-têtes
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always unset X-Powered-By
+</IfModule>
+
+# ---------------------------------------------------------------- divers
+ServerSignature Off
+Options -Indexes
