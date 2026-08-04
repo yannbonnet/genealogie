@@ -12,54 +12,67 @@ AddDefaultCharset UTF-8
   AddCharset UTF-8 .html .css .js
 </IfModule>
 
-# ---------------------------------------------------------------- HTTPS
-# Force le passage en HTTPS. À n'activer qu'une fois le certificat SSL
-# délivré par OVH (onglet « Certificats SSL » du manager).
+# ---------------------------------------------------------------- HTTPS et redirection du domaine
+# Force le passau'une fois lecertificat SSL
+# délivré par OVL » du manager).
 #
-# ATTENTION — piège propre aux hébergements mutualisés OVH configurés avec un
-# « dossier racine » (ici : genea). Le motif d'une RewriteRule est évalué sur le
-# chemin interne, qui contient encore le nom du dossier. Reconstruire l'adresse
-# avec $1 produisait donc https://genea.bonnet.bzh/genea/ au lieu de la racine.
-# %{REQUEST_URI} contient toujours le chemin public : c'est lui qu'il faut utiliser.
-<IfModule mod_rewrite.c>
+# ATTENTION — pis mutualisés OVHconfigurés avec un
+# « dossier raciif d'uneRewriteRule est évalué sur le
+# chemin interneom du dossier.Reconstruire l'adresse
+# avec $1 produinnet.bzh/genea/au lieu de la racine.
+# %{REQUEST_URI}in public : c'est lui qu'il faut utiliser.
+<IfModule mod_re
   RewriteEngine On
-  # Ne jamais rediriger le dossier de validation ACME : c'est par lui que
-  # Let's Encrypt vérifie le domaine avant d'émettre le certificat. Une
+
+  # Ne jamais rediriger le dossier de validation ACME :
+c'est par lui qu
+  # Let's Encrypt vérifie le domaine avant d'émettre le
+certificat. Une
   # redirection à cet endroit fait échouer la délivrance.
+Cette exclusion
+  # s'applique aux deux règles ci-dessous, pas seulement au
+forçage HTTPS.
   RewriteCond %{REQUEST_URI} !^/\.well-known/
-  RewriteCond %{HTTPS} !=on
+  RewriteCond %{
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  RewriteRule ^ EST_URI}[R=301,L]
+
+  # Redirection 301 permanente : genea.bonnet.bzh est intégré à bonnet
+  # et remplacé par la page /genealogie (contenu repris à
+l'identique, ave
+  # traduction anglaise ajoutée). Ce dossier n'a jamais eu
+qu'une seule pag
+  # sa remplaçante aussi n'en a qu'une seule : toute URL
+demandée ici, qu
+  # que soit le chemin, renvoie donc vers cette même page
+unique, sans
+  # tentative de faire correspondre un chemin à un autre.
+  RewriteCond %{wn/
+  RewriteRule ^ https://bonnet.bzh/genealogie/ [R=301,L]
 </IfModule>
 
-# ---------------------------------------------------------------- note
-# Ce site est servi sous genea.bonnet.bzh uniquement : il n'y a pas de variante
-# « www » a rediriger. Rien a ajouter ici.
-
-# ---------------------------------------------------------------- compression
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
-  AddOutputFilterByType DEFLATE application/javascript application/json
+# -------------------------------------- compression
+<IfModule mod_de
+  AddOutputFilterByType DEFLATE text/html text/plain
+text/css text/xm
+  AddOutputFilterByType DEFLATE application/javascript
+application/json
   AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 
-# ---------------------------------------------------------------- cache navigateur
-<IfModule mod_expires.c>
+# -------------------------------------- cache navigateur
+<IfModule mod_ex
   ExpiresActive On
-  ExpiresByType text/html "access plus 1 hour"
-  ExpiresByType image/png "access plus 1 month"
-  ExpiresByType image/jpeg "access plus 1 month"
-  ExpiresByType image/svg+xml "access plus 1 month"
-  ExpiresByType text/css "access plus 1 month"
-</IfModule>
-
+  ExpiresByType our"
+  ExpiresByType image/png "access plus 1 month"              ExpiresByType month"
+  ExpiresByType image/svg+xml "access plus 1 month"          ExpiresByType nth"
+</IfModule>                                                
 # ---------------------------------------------------------------- en-têtes
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
+<IfModule mod_headers.c>       Header set X-Cff"
+  Header set Referrer-Policy "strict-origin-w
   Header always unset X-Powered-By
 </IfModule>
 
-# ---------------------------------------------------------------- divers
-ServerSignature Off
+# -------------------------------------- divers
+ServerSignature
 Options -Indexes
